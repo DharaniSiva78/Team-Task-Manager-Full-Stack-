@@ -7,6 +7,15 @@ A full-stack task management application with role-based access control for team
 - **Frontend:** [Your Railway Frontend URL]
 - **Backend API:** [Your Railway Backend URL]
 
+<img width="959" height="479" alt="image" src="https://github.com/user-attachments/assets/a954f257-64d7-4a7f-85ed-72fd215a16a7" />
+<img width="959" height="479" alt="image" src="https://github.com/user-attachments/assets/e26e9668-7e14-4842-b943-9dee1dc57c93" />
+<img width="959" height="479" alt="image" src="https://github.com/user-attachments/assets/2fb801c5-901b-4407-8940-21f9ae36c86c" />
+<img width="959" height="479" alt="image" src="https://github.com/user-attachments/assets/8aa9e67e-5dfc-4db4-8b59-cf9b459c7292" />
+<img width="959" height="479" alt="image" src="https://github.com/user-attachments/assets/4f59825c-1f15-4fab-ac1c-0e3a5227ef8a" />
+<img width="959" height="479" alt="image" src="https://github.com/user-attachments/assets/8a9932ee-de61-4436-9e5a-c5ea5fb77d67" />
+<img width="959" height="479" alt="image" src="https://github.com/user-attachments/assets/6e7d73f1-312a-49f6-a718-c7865f94b0c7" />
+<img width="959" height="479" alt="image" src="https://github.com/user-attachments/assets/fa5e1adf-69e5-4c74-b137-ab35095fcc95" />
+
 ## Features
 
 ### Authentication
