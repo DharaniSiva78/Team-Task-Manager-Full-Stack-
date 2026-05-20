@@ -47,10 +47,10 @@ const Dashboard = () => {
       const token = localStorage.getItem('token');
       const headers = { Authorization: `Bearer ${token}` };
       
-      const projectsRes = await axios.get('http://localhost:5000/api/projects', { headers });
+      const projectsRes = await axios.get('https://team-task-manager-backend-jhdq.onrender.com/api/projects', { headers });
       const projects = projectsRes.data;
       
-      const tasksRes = await axios.get('http://localhost:5000/api/tasks', { headers });
+      const tasksRes = await axios.get('https://team-task-manager-backend-jhdq.onrender.com/api/tasks', { headers });
       const tasks = tasksRes.data;
       setAllTasks(tasks);
       

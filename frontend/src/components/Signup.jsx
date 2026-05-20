@@ -29,7 +29,7 @@ const Signup = () => {
     
     try {
       const { confirmPassword, ...signupData } = formData;
-      const response = await axios.post('http://localhost:5000/api/auth/signup', signupData);
+      const response = await axios.post('https://team-task-manager-backend-jhdq.onrender.com/api/auth/signup', signupData);
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('user', JSON.stringify(response.data.user));
       toast.success('Account created successfully!');

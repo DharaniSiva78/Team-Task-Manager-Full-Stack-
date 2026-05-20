@@ -34,7 +34,7 @@ const Tasks = () => {
     try {
       const token = localStorage.getItem('token');
       const headers = { Authorization: `Bearer ${token}` };
-      const response = await axios.get('http://localhost:5000/api/tasks', { headers });
+      const response = await axios.get('https://team-task-manager-backend-jhdq.onrender.com/api/tasks', { headers });
       setTasks(response.data);
     } catch (error) {
       toast.error('Failed to fetch tasks');
@@ -47,7 +47,7 @@ const Tasks = () => {
     try {
       const token = localStorage.getItem('token');
       const headers = { Authorization: `Bearer ${token}` };
-      const response = await axios.get('http://localhost:5000/api/projects', { headers });
+      const response = await axios.get('https://team-task-manager-backend-jhdq.onrender.com/api/projects', { headers });
       setProjects(response.data);
     } catch (error) {
       console.error('Failed to fetch projects');
@@ -58,7 +58,7 @@ const Tasks = () => {
     try {
       const token = localStorage.getItem('token');
       const headers = { Authorization: `Bearer ${token}` };
-      const response = await axios.get('http://localhost:5000/api/auth/users', { headers });
+      const response = await axios.get('https://team-task-manager-backend-jhdq.onrender.com/api/auth/users', { headers });
       setUsers(response.data);
     } catch (error) {
       console.error('Failed to fetch users');
@@ -72,10 +72,10 @@ const Tasks = () => {
       const headers = { Authorization: `Bearer ${token}` };
       
       if (editingTask) {
-        await axios.put(`http://localhost:5000/api/tasks/${editingTask._id}`, formData, { headers });
+        await axios.put(`https://team-task-manager-backend-jhdq.onrender.com/api/tasks/${editingTask._id}`, formData, { headers });
         toast.success('Task updated successfully');
       } else {
-        await axios.post('http://localhost:5000/api/tasks', formData, { headers });
+        await axios.post('https://team-task-manager-backend-jhdq.onrender.com/api/tasks', formData, { headers });
         toast.success('Task created successfully');
       }
       
@@ -91,7 +91,7 @@ const Tasks = () => {
     try {
       const token = localStorage.getItem('token');
       const headers = { Authorization: `Bearer ${token}` };
-      await axios.patch(`http://localhost:5000/api/tasks/${taskId}/status`, { status: newStatus }, { headers });
+      await axios.patch(`https://team-task-manager-backend-jhdq.onrender.com/api/tasks/${taskId}/status`, { status: newStatus }, { headers });
       toast.success('Task status updated');
       fetchTasks();
     } catch (error) {
@@ -104,7 +104,7 @@ const Tasks = () => {
       try {
         const token = localStorage.getItem('token');
         const headers = { Authorization: `Bearer ${token}` };
-        await axios.delete(`http://localhost:5000/api/tasks/${id}`, { headers });
+        await axios.delete(`https://team-task-manager-backend-jhdq.onrender.com/api/tasks/${id}`, { headers });
         toast.success('Task deleted successfully');
         fetchTasks();
       } catch (error) {

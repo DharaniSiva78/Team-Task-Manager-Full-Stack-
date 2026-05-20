@@ -128,7 +128,7 @@ const Projects = () => {
       try {
         const token = localStorage.getItem('token');
         const headers = { Authorization: `Bearer ${token}` };
-        await axios.delete(`http://localhost:5000/api/projects/${id}`, { headers });
+        await axios.delete(`https://team-task-manager-backend-jhdq.onrender.com/api/projects/${id}`, { headers });
         toast.success('Project deleted successfully');
         await fetchData();
       } catch (error) {
@@ -141,7 +141,7 @@ const Projects = () => {
     try {
       const token = localStorage.getItem('token');
       const headers = { Authorization: `Bearer ${token}` };
-      await axios.post(`http://localhost:5000/api/projects/${selectedProject._id}/members`, 
+      await axios.post(`https://team-task-manager-backend-jhdq.onrender.com/api/projects/${selectedProject._id}/members`, 
         { userId }, 
         { headers }
       );
@@ -158,7 +158,7 @@ const Projects = () => {
       try {
         const token = localStorage.getItem('token');
         const headers = { Authorization: `Bearer ${token}` };
-        await axios.delete(`http://localhost:5000/api/projects/${selectedProject._id}/members/${userId}`, { headers });
+        await axios.delete(`https://team-task-manager-backend-jhdq.onrender.com/api/projects/${selectedProject._id}/members/${userId}`, { headers });
         toast.success('Member removed successfully');
         await fetchData();
       } catch (error) {
