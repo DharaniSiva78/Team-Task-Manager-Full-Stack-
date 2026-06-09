@@ -4,9 +4,6 @@ A full-stack task management application with role-based access control for team
 
 ## Live Demo
 
-- **Frontend:** [Your Railway Frontend URL]
-- **Backend API:** [Your Railway Backend URL]
-
 <img width="959" height="479" alt="image" src="https://github.com/user-attachments/assets/a954f257-64d7-4a7f-85ed-72fd215a16a7" />
 <img width="959" height="479" alt="image" src="https://github.com/user-attachments/assets/e26e9668-7e14-4842-b943-9dee1dc57c93" />
 <img width="959" height="479" alt="image" src="https://github.com/user-attachments/assets/2fb801c5-901b-4407-8940-21f9ae36c86c" />
